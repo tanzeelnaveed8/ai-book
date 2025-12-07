@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Physical AI & Humanoid Robotics
 
 This repository hosts the academic textbook "Physical AI & Humanoid Robotics," built using DocuSaurus and deployed via GitHub Pages.
@@ -58,3 +59,6 @@ The generated static files will be located in the `build/` directory.
 ## Adding New Content
 
 New chapters should be added as Markdown files within the `docs/` directory. Organize them into subdirectories to reflect modules. Update `sidebars.js` to include new chapters in the navigation.
+=======
+# ai-book
+>>>>>>> 82028b11ec5d0d524df0a39b5530798d6fe18679
