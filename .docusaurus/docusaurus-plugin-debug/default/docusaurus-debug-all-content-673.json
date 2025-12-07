@@ -1,0 +1,72 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/ai-book/docs",
+          "tagsPath": "/ai-book/docs/tags",
+          "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs",
+          "editUrlLocalized": "https://github.com/your-github-username/ai-book/tree/main/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "C:\\Users\\DELL LATITUDE\\Desktop\\tanzeel\\ai-book\\sidebars.js",
+          "contentPath": "C:\\Users\\DELL LATITUDE\\Desktop\\tanzeel\\ai-book\\docs",
+          "contentPathLocalized": "C:\\Users\\DELL LATITUDE\\Desktop\\tanzeel\\ai-book\\i18n\\en\\docusaurus-plugin-content-docs\\current",
+          "docs": [
+            {
+              "id": "introduction/chapter1",
+              "title": "Introduction to Physical AI",
+              "description": "Concept Explanation",
+              "source": "@site/docs/introduction/chapter1.md",
+              "sourceDirName": "introduction",
+              "slug": "/introduction/chapter1",
+              "permalink": "/ai-book/docs/introduction/chapter1",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/introduction/chapter1.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "id": "chapter1",
+                "title": "Introduction to Physical AI",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "category",
+                "label": "Introduction",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "introduction/chapter1"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": null
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

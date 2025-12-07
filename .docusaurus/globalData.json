@@ -1,0 +1,33 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/ai-book/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/ai-book/docs",
+          "mainDocId": "introduction/chapter1",
+          "docs": [
+            {
+              "id": "introduction/chapter1",
+              "path": "/ai-book/docs/introduction/chapter1",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/ai-book/docs/introduction/chapter1",
+                "label": "introduction/chapter1"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+# Gitignore for Node.js/TypeScript projects
+node_modules/
+dist/
+build/
+*.log
+.env*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+coverage/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Universal ignores
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/

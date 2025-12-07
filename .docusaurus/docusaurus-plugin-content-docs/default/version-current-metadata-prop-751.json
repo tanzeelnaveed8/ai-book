@@ -1,0 +1,37 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "category",
+        "label": "Introduction",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction to Physical AI",
+            "href": "/ai-book/docs/introduction/chapter1",
+            "docId": "introduction/chapter1",
+            "unlisted": false
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      }
+    ]
+  },
+  "docs": {
+    "introduction/chapter1": {
+      "id": "introduction/chapter1",
+      "title": "Introduction to Physical AI",
+      "description": "Concept Explanation",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}
