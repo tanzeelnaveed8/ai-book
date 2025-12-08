@@ -1,0 +1,29 @@
+{
+  "id": "modules/02-digital-twin",
+  "title": "Module 2: The Digital Twin (Gazebo & Unity)",
+  "description": "In this module, you will learn how to create and use a \"Digital Twin\"—a high-fidelity simulation of a real-world robot and its environment. This is a critical skill in modern robotics, as it allows for rapid prototyping, testing, and AI model training in a safe, cost-effective, and repeatable virtual world before deploying to physical hardware.",
+  "source": "@site/docs/modules/02-digital-twin.md",
+  "sourceDirName": "modules",
+  "slug": "/modules/02-digital-twin",
+  "permalink": "/ai-book/modules/02-digital-twin",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/modules/02-digital-twin.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "02-digital-twin",
+    "title": "Module 2: The Digital Twin (Gazebo & Unity)",
+    "sidebar_label": "Digital Twin Simulation"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ROS 2 Nervous System",
+    "permalink": "/ai-book/modules/01-ros-2"
+  },
+  "next": {
+    "title": "NVIDIA Isaac",
+    "permalink": "/ai-book/modules/03-nvidia-isaac"
+  }
+}

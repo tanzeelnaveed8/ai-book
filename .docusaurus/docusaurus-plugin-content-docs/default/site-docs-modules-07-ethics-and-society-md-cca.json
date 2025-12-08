@@ -1,0 +1,29 @@
+{
+  "id": "modules/07-ethics-and-society",
+  "title": "Module 7: Ethics & Society",
+  "description": "As we build increasingly capable humanoid robots, we have an obligation to consider their impact on society. This module steps back from the technical details to critically examine the ethical challenges and societal implications of deploying autonomous systems in the human world. We will discuss safety, algorithmic bias, the future of work, and our responsibility as engineers and designers.",
+  "source": "@site/docs/modules/07-ethics-and-society.md",
+  "sourceDirName": "modules",
+  "slug": "/modules/07-ethics-and-society",
+  "permalink": "/ai-book/modules/07-ethics-and-society",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/modules/07-ethics-and-society.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "id": "07-ethics-and-society",
+    "title": "Module 7: Ethics & Society",
+    "sidebar_label": "Ethics & Society"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Human-Robot Interaction",
+    "permalink": "/ai-book/modules/06-human-robot-interaction"
+  },
+  "next": {
+    "title": "Future Trends",
+    "permalink": "/ai-book/modules/08-future-trends"
+  }
+}

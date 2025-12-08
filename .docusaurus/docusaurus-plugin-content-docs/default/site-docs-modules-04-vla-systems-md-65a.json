@@ -1,0 +1,29 @@
+{
+  "id": "modules/04-vla-systems",
+  "title": "Module 4: Vision-Language-Action (VLA)",
+  "description": "This module explores the exciting convergence of Large Language Models (LLMs), computer vision, and robotics. We will learn how to build Vision-Language-Action (VLA) systems that allow a robot to understand natural language commands, perceive the world through vision, and execute complex, multi-step tasks. This is how we give the robot a \"cognitive\" understanding of its mission.",
+  "source": "@site/docs/modules/04-vla-systems.md",
+  "sourceDirName": "modules",
+  "slug": "/modules/04-vla-systems",
+  "permalink": "/ai-book/modules/04-vla-systems",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/modules/04-vla-systems.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "04-vla-systems",
+    "title": "Module 4: Vision-Language-Action (VLA)",
+    "sidebar_label": "Vision-Language-Action"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "NVIDIA Isaac",
+    "permalink": "/ai-book/modules/03-nvidia-isaac"
+  },
+  "next": {
+    "title": "Bipedal Locomotion",
+    "permalink": "/ai-book/modules/05-bipedal-locomotion"
+  }
+}

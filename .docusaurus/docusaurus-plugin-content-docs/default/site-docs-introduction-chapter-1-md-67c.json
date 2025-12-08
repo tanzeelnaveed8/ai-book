@@ -5,7 +5,7 @@
   "source": "@site/docs/introduction/chapter1.md",
   "sourceDirName": "introduction",
   "slug": "/introduction/chapter1",
-  "permalink": "/ai-book/docs/introduction/chapter1",
+  "permalink": "/ai-book/introduction/chapter1",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/introduction/chapter1.md",
@@ -17,5 +17,9 @@
     "title": "Introduction to Physical AI",
     "sidebar_position": 1
   },
-  "sidebar": "tutorialSidebar"
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Modules",
+    "permalink": "/ai-book/modules"
+  }
 }

@@ -1,0 +1,29 @@
+{
+  "id": "modules/03-nvidia-isaac",
+  "title": "Module 3: The AI-Robot Brain (NVIDIA Isaac™)",
+  "description": "This module dives into the NVIDIA Isaac platform, a powerful toolkit for developing AI-powered robots. We will focus on using Isaac Sim for photorealistic simulation and synthetic data generation, and Isaac ROS for hardware-accelerated perception and navigation tasks. This is where we give our robot a \"brain\" capable of advanced understanding of its environment.",
+  "source": "@site/docs/modules/03-nvidia-isaac.md",
+  "sourceDirName": "modules",
+  "slug": "/modules/03-nvidia-isaac",
+  "permalink": "/ai-book/modules/03-nvidia-isaac",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/modules/03-nvidia-isaac.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "03-nvidia-isaac",
+    "title": "Module 3: The AI-Robot Brain (NVIDIA Isaac™)",
+    "sidebar_label": "NVIDIA Isaac"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Digital Twin Simulation",
+    "permalink": "/ai-book/modules/02-digital-twin"
+  },
+  "next": {
+    "title": "Vision-Language-Action",
+    "permalink": "/ai-book/modules/04-vla-systems"
+  }
+}

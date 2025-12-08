@@ -1,0 +1,20 @@
+{
+  "id": "module1/chapter2",
+  "title": "Advanced Control Systems for Humanoid Robotics",
+  "description": "Introduction to Advanced Control",
+  "source": "@site/docs/module1/chapter2.md",
+  "sourceDirName": "module1",
+  "slug": "/module1/chapter2",
+  "permalink": "/ai-book/module1/chapter2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/module1/chapter2.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "chapter2",
+    "title": "Advanced Control Systems for Humanoid Robotics",
+    "sidebar_position": 1
+  }
+}

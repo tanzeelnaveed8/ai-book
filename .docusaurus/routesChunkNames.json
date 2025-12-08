@@ -1,62 +1,145 @@
 {
-  "/ai-book/__docusaurus/debug-cb7": {
+  "/ai-book/-5fa": {
+    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
+    "__context": {
+      "plugin": "plugin---ai-book-ab-0-676"
+    },
+    "config": "config---ai-book-5-e-9-11a"
+  },
+  "/ai-book/__docusaurus/debug-f49": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---ai-book-docusaurus-debug-4-a-4-552"
+      "plugin": "plugin---ai-book-docusaurus-debug-47-a-865"
     }
   },
-  "/ai-book/__docusaurus/debug/config-993": {
+  "/ai-book/__docusaurus/debug/config-bad": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---ai-book-docusaurus-debug-4-a-4-552"
+      "plugin": "plugin---ai-book-docusaurus-debug-47-a-865"
     }
   },
-  "/ai-book/__docusaurus/debug/content-be0": {
+  "/ai-book/__docusaurus/debug/content-476": {
     "__comp": "__comp---theme-debug-contentba-8-ce7",
     "__context": {
-      "plugin": "plugin---ai-book-docusaurus-debug-4-a-4-552"
+      "plugin": "plugin---ai-book-docusaurus-debug-47-a-865"
     },
     "allContent": "allContent---ai-book-docusaurus-debug-content-246-09a"
   },
-  "/ai-book/__docusaurus/debug/globalData-83d": {
+  "/ai-book/__docusaurus/debug/globalData-ddb": {
     "__comp": "__comp---theme-debug-global-dataede-0fa",
     "__context": {
-      "plugin": "plugin---ai-book-docusaurus-debug-4-a-4-552"
+      "plugin": "plugin---ai-book-docusaurus-debug-47-a-865"
     }
   },
-  "/ai-book/__docusaurus/debug/metadata-8b3": {
+  "/ai-book/__docusaurus/debug/metadata-7d4": {
     "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
     "__context": {
-      "plugin": "plugin---ai-book-docusaurus-debug-4-a-4-552"
+      "plugin": "plugin---ai-book-docusaurus-debug-47-a-865"
     }
   },
-  "/ai-book/__docusaurus/debug/registry-438": {
+  "/ai-book/__docusaurus/debug/registry-594": {
     "__comp": "__comp---theme-debug-registry-679-501",
     "__context": {
-      "plugin": "plugin---ai-book-docusaurus-debug-4-a-4-552"
+      "plugin": "plugin---ai-book-docusaurus-debug-47-a-865"
     }
   },
-  "/ai-book/__docusaurus/debug/routes-9ba": {
+  "/ai-book/__docusaurus/debug/routes-49c": {
     "__comp": "__comp---theme-debug-routes-946-699",
     "__context": {
-      "plugin": "plugin---ai-book-docusaurus-debug-4-a-4-552"
+      "plugin": "plugin---ai-book-docusaurus-debug-47-a-865"
     }
   },
-  "/ai-book/docs-b98": {
+  "/ai-book/-f87": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
-      "plugin": "plugin---ai-book-docs-9-a-4-dbe"
+      "plugin": "plugin---ai-book-491-d7c"
     }
   },
-  "/ai-book/docs-d17": {
+  "/ai-book/-8e0": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "version": "version---ai-book-docs-935-cfa"
+    "version": "version---ai-book-935-cac"
   },
-  "/ai-book/docs-f39": {
+  "/ai-book/-91d": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
-  "/ai-book/docs/introduction/chapter1-ffd": {
+  "/ai-book/advanced-locomotion/advanced-bipedal-locomotion-585": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-docs-introduction-chapter-167-c-761"
+    "content": "content---ai-book-advanced-locomotion-advanced-bipedal-locomotion-033-f47"
+  },
+  "/ai-book/capstone/overview-c0a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-capstone-overview-410-3db"
+  },
+  "/ai-book/ethical-implications/ethical-social-implications-6af": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-ethical-implications-ethical-social-implications-67-f-9a8"
+  },
+  "/ai-book/future-trends/future-trends-physical-ai-d70": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-future-trends-future-trends-physical-aifb-9-97d"
+  },
+  "/ai-book/glossary-f2e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-glossarye-74-706"
+  },
+  "/ai-book/hardware/setup-772": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-hardware-setup-55-f-f5c"
+  },
+  "/ai-book/human-robot-collaboration/-dbc": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-human-robot-collaboration-b-12-3f6"
+  },
+  "/ai-book/introduction/chapter1-713": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-introduction-chapter-167-c-99c"
+  },
+  "/ai-book/module1/chapter2-3be": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-module-1-chapter-2-e-8-e-a65"
+  },
+  "/ai-book/modules-207": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---ai-book-modules-960-6c6"
+  },
+  "/ai-book/modules/01-ros-2-2c2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-modules-01-ros-2-a-24-b1b"
+  },
+  "/ai-book/modules/02-digital-twin-5ca": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-modules-02-digital-twine-23-857"
+  },
+  "/ai-book/modules/03-nvidia-isaac-4d6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-modules-03-nvidia-isaac-68-f-224"
+  },
+  "/ai-book/modules/04-vla-systems-960": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-modules-04-vla-systems-65-a-9c6"
+  },
+  "/ai-book/modules/05-bipedal-locomotion-d3a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-modules-05-bipedal-locomotione-9-e-5bc"
+  },
+  "/ai-book/modules/06-human-robot-interaction-0db": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-modules-06-human-robot-interaction-414-358"
+  },
+  "/ai-book/modules/07-ethics-and-society-118": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-modules-07-ethics-and-societycca-292"
+  },
+  "/ai-book/modules/08-future-trends-685": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-modules-08-future-trends-85-e-15d"
+  },
+  "/ai-book/references-a37": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-references-33-a-a63"
+  },
+  "/ai-book/weekly-map/weeks-1-13-26c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---ai-book-weekly-map-weeks-1-13-a-1-a-ad9"
   }
 }

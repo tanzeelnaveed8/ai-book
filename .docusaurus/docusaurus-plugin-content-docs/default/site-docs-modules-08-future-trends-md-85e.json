@@ -1,0 +1,29 @@
+{
+  "id": "modules/08-future-trends",
+  "title": "Module 8: Future Trends",
+  "description": "In this final module, we look to the horizon. Having mastered the current state of the art, we will explore the speculative and cutting-edge research that is shaping the future of physical AI. From direct brain-robot interfaces to robots that learn on their own and the regulatory landscapes that will govern them, we will discuss what's next for humanoid robotics.",
+  "source": "@site/docs/modules/08-future-trends.md",
+  "sourceDirName": "modules",
+  "slug": "/modules/08-future-trends",
+  "permalink": "/ai-book/modules/08-future-trends",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/modules/08-future-trends.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "08-future-trends",
+    "title": "Module 8: Future Trends",
+    "sidebar_label": "Future Trends"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ethics & Society",
+    "permalink": "/ai-book/modules/07-ethics-and-society"
+  },
+  "next": {
+    "title": "Weeks 1-13",
+    "permalink": "/ai-book/weekly-map/weeks-1-13"
+  }
+}

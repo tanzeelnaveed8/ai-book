@@ -1,28 +1,24 @@
-import { themes as prismThemes } from 'prism-react-renderer';
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Physical AI & Humanoid Robotics',
-  tagline: 'An Academic Textbook',
-  favicon: 'img/favicon.ico',
+  tagline: 'An Academic Textbook on Embodied Intelligence',
+  favicon: 'img/favicon.ico', // TODO: Replace with a custom favicon
 
   // Set the production url of your site here
-  url: 'https://your-github-username.github.io',
+  url: 'https://tanzeelnaveed8.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/ai-book/', // This will be updated for GitHub Pages deployment
+  baseUrl: '/ai-book/',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you can remove these.
-  organizationName: 'your-github-username', // Usually your GitHub org/user name.
-  projectName: 'ai-book', // Usually your repo name.
+  organizationName: 'tanzeelnaveed8', // Your GitHub org/user name.
+  projectName: 'ai-book', // Your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -35,12 +31,11 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.<
-          // Remove this to remove the "edit this page" links.
+          routeBasePath: '/', // Serve the docs at the site's root
           editUrl:
-            'https://github.com/your-github-username/ai-book/tree/main/', // This will be updated for GitHub Pages deployment
+            'https://github.com/your-github-username/ai-book/tree/main/',
         },
-        blog: false,
+        blog: false, // Disable the blog plugin
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -51,23 +46,27 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      // TODO: Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Physical AI & Humanoid Robotics',
         logo: {
-          alt: 'My Project Logo',
-          src: 'img/logo.svg',
+          alt: 'Site Logo',
+          src: 'img/logo.png', // TODO: Replace with a custom logo
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Book',
+            label: 'Curriculum',
           },
+          {to: '/modules', label: 'Modules', position: 'left'},
+          {to: '/weekly-map/weeks-1-13', label: 'Weekly Map', position: 'left'},
+          {to: '/hardware/setup', label: 'Hardware', position: 'left'},
+          {to: '/capstone/overview', label: 'Capstone', position: 'left'},
           {
-            href: 'https://github.com/your-github-username/ai-book',
+            href: 'https://github.com/tanzeelnaveed8/ai-book',
             label: 'GitHub',
             position: 'right',
           },
@@ -77,11 +76,19 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Learning',
             items: [
               {
-                label: 'Introduction',
-                to: '/docs/introduction/chapter1',
+                label: 'Curriculum',
+                to: '/',
+              },
+              {
+                label: 'Modules',
+                to: '/modules',
+              },
+              {
+                label: 'Capstone Project',
+                to: '/capstone/overview',
               },
             ],
           },
@@ -89,16 +96,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'ROS Discourse',
+                href: 'https://discourse.ros.org/',
+              },
+              {
+                label: 'NVIDIA Developer Forums',
+                href: 'https://forums.developer.nvidia.com/',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://discordapp.com/invite/docusaurus', // Placeholder
               },
             ],
           },
@@ -107,18 +114,20 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/your-github-username/ai-book',
+                href: 'https://github.com/tanzeelnaveed8/ai-book',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        additionalLanguages: ['bash', 'python', 'cpp', 'cmake', 'yaml'],
       },
     }),
 };
 
 export default config;
+

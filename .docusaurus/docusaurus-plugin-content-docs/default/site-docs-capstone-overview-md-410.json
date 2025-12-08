@@ -1,0 +1,28 @@
+{
+  "id": "capstone/overview",
+  "title": "Capstone Project Overview",
+  "description": "The capstone project is the culmination of all the skills learned throughout this course. Your team will design, simulate, and deploy a complete Vision-Language-Action (VLA) pipeline on a simulated robot. The final goal is to have a robot that can respond to a natural language voice command to identify, navigate to, and interact with an object in a simulated environment.",
+  "source": "@site/docs/capstone/overview.md",
+  "sourceDirName": "capstone",
+  "slug": "/capstone/overview",
+  "permalink": "/ai-book/capstone/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/capstone/overview.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "overview",
+    "title": "Capstone Project Overview",
+    "sidebar_label": "Overview"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Hardware Setup",
+    "permalink": "/ai-book/hardware/setup"
+  },
+  "next": {
+    "title": "Glossary",
+    "permalink": "/ai-book/glossary"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "glossary",
+  "title": "Glossary",
+  "description": "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z",
+  "source": "@site/docs/glossary.md",
+  "sourceDirName": ".",
+  "slug": "/glossary",
+  "permalink": "/ai-book/glossary",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/glossary.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "glossary",
+    "title": "Glossary",
+    "sidebar_label": "Glossary"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/ai-book/capstone/overview"
+  },
+  "next": {
+    "title": "References",
+    "permalink": "/ai-book/references"
+  }
+}

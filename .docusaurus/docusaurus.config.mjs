@@ -5,11 +5,11 @@
  */
 export default {
   "title": "Physical AI & Humanoid Robotics",
-  "tagline": "An Academic Textbook",
+  "tagline": "An Academic Textbook on Embodied Intelligence",
   "favicon": "img/favicon.ico",
-  "url": "https://your-github-username.github.io",
+  "url": "https://tanzeelnaveed8.github.io",
   "baseUrl": "/ai-book/",
-  "organizationName": "your-github-username",
+  "organizationName": "tanzeelnaveed8",
   "projectName": "ai-book",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
@@ -27,6 +27,7 @@ export default {
       {
         "docs": {
           "sidebarPath": "./sidebars.js",
+          "routeBasePath": "/",
           "editUrl": "https://github.com/your-github-username/ai-book/tree/main/"
         },
         "blog": false,
@@ -41,18 +42,38 @@ export default {
     "navbar": {
       "title": "Physical AI & Humanoid Robotics",
       "logo": {
-        "alt": "My Project Logo",
-        "src": "img/logo.svg"
+        "alt": "Site Logo",
+        "src": "img/logo.png"
       },
       "items": [
         {
           "type": "docSidebar",
           "sidebarId": "tutorialSidebar",
           "position": "left",
-          "label": "Book"
+          "label": "Curriculum"
         },
         {
-          "href": "https://github.com/your-github-username/ai-book",
+          "to": "/modules",
+          "label": "Modules",
+          "position": "left"
+        },
+        {
+          "to": "/weekly-map/weeks-1-13",
+          "label": "Weekly Map",
+          "position": "left"
+        },
+        {
+          "to": "/hardware/setup",
+          "label": "Hardware",
+          "position": "left"
+        },
+        {
+          "to": "/capstone/overview",
+          "label": "Capstone",
+          "position": "left"
+        },
+        {
+          "href": "https://github.com/tanzeelnaveed8/ai-book",
           "label": "GitHub",
           "position": "right"
         }
@@ -63,11 +84,19 @@ export default {
       "style": "dark",
       "links": [
         {
-          "title": "Docs",
+          "title": "Learning",
           "items": [
             {
-              "label": "Introduction",
-              "to": "/docs/introduction/chapter1"
+              "label": "Curriculum",
+              "to": "/"
+            },
+            {
+              "label": "Modules",
+              "to": "/modules"
+            },
+            {
+              "label": "Capstone Project",
+              "to": "/capstone/overview"
             }
           ]
         },
@@ -75,16 +104,16 @@ export default {
           "title": "Community",
           "items": [
             {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
+              "label": "ROS Discourse",
+              "href": "https://discourse.ros.org/"
+            },
+            {
+              "label": "NVIDIA Developer Forums",
+              "href": "https://forums.developer.nvidia.com/"
             },
             {
               "label": "Discord",
               "href": "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              "label": "Twitter",
-              "href": "https://twitter.com/docusaurus"
             }
           ]
         },
@@ -93,12 +122,12 @@ export default {
           "items": [
             {
               "label": "GitHub",
-              "href": "https://github.com/your-github-username/ai-book"
+              "href": "https://github.com/tanzeelnaveed8/ai-book"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2025 Physical AI & Humanoid Robotics. Built with Docusaurus."
+      "copyright": "Copyright © 2025 My Project, Inc. Built with Docusaurus."
     },
     "prism": {
       "theme": {
@@ -292,7 +321,13 @@ export default {
           }
         ]
       },
-      "additionalLanguages": [],
+      "additionalLanguages": [
+        "bash",
+        "python",
+        "cpp",
+        "cmake",
+        "yaml"
+      ],
       "magicComments": [
         {
           "className": "theme-code-block-highlighted-line",

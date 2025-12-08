@@ -1,0 +1,20 @@
+{
+  "id": "human-robot-collaboration/human-robot-collaboration",
+  "title": "Human-Robot Collaboration",
+  "description": "Introduction",
+  "source": "@site/docs/human-robot-collaboration/human-robot-collaboration.md",
+  "sourceDirName": "human-robot-collaboration",
+  "slug": "/human-robot-collaboration/",
+  "permalink": "/ai-book/human-robot-collaboration/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/human-robot-collaboration/human-robot-collaboration.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "human-robot-collaboration",
+    "title": "Human-Robot Collaboration",
+    "sidebar_position": 1
+  }
+}

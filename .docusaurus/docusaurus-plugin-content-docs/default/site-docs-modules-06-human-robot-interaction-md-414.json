@@ -1,0 +1,29 @@
+{
+  "id": "modules/06-human-robot-interaction",
+  "title": "Module 6: Human-Robot Interaction (HRI)",
+  "description": "This module transitions from the mechanics of robot motion to the subtleties of robot interaction. We will explore how to design humanoid robots that can work with, understand, and be understood by humans. This involves cognitive robotics, interaction design, and the emerging field of \"Emotion AI\" to make robots more intuitive and socially aware partners.",
+  "source": "@site/docs/modules/06-human-robot-interaction.md",
+  "sourceDirName": "modules",
+  "slug": "/modules/06-human-robot-interaction",
+  "permalink": "/ai-book/modules/06-human-robot-interaction",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/modules/06-human-robot-interaction.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "06-human-robot-interaction",
+    "title": "Module 6: Human-Robot Interaction (HRI)",
+    "sidebar_label": "Human-Robot Interaction"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bipedal Locomotion",
+    "permalink": "/ai-book/modules/05-bipedal-locomotion"
+  },
+  "next": {
+    "title": "Ethics & Society",
+    "permalink": "/ai-book/modules/07-ethics-and-society"
+  }
+}
