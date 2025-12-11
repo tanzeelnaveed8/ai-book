@@ -5,7 +5,7 @@
   "source": "@site/docs/modules/02-digital-twin.md",
   "sourceDirName": "modules",
   "slug": "/modules/02-digital-twin",
-  "permalink": "/ai-book/modules/02-digital-twin",
+  "permalink": "/physical-ai-textbook/modules/02-digital-twin",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/modules/02-digital-twin.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "ROS 2 Nervous System",
-    "permalink": "/ai-book/modules/01-ros-2"
+    "permalink": "/physical-ai-textbook/modules/01-ros-2"
   },
   "next": {
     "title": "NVIDIA Isaac",
-    "permalink": "/ai-book/modules/03-nvidia-isaac"
+    "permalink": "/physical-ai-textbook/modules/03-nvidia-isaac"
   }
 }

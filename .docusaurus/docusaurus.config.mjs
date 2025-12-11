@@ -8,9 +8,9 @@ export default {
   "tagline": "An Academic Textbook on Embodied Intelligence",
   "favicon": "img/favicon.ico",
   "url": "https://tanzeelnaveed8.github.io",
-  "baseUrl": "/ai-book/",
+  "baseUrl": "/physical-ai-textbook/",
   "organizationName": "tanzeelnaveed8",
-  "projectName": "ai-book",
+  "projectName": "/physical-ai-textbook/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {

@@ -5,7 +5,7 @@
   "source": "@site/docs/modules/01-ros-2.md",
   "sourceDirName": "modules",
   "slug": "/modules/01-ros-2",
-  "permalink": "/ai-book/modules/01-ros-2",
+  "permalink": "/physical-ai-textbook/modules/01-ros-2",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/modules/01-ros-2.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Modules",
-    "permalink": "/ai-book/modules"
+    "permalink": "/physical-ai-textbook/modules"
   },
   "next": {
     "title": "Digital Twin Simulation",
-    "permalink": "/ai-book/modules/02-digital-twin"
+    "permalink": "/physical-ai-textbook/modules/02-digital-twin"
   }
 }

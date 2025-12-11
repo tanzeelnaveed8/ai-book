@@ -16,7 +16,7 @@
           {
             "type": "link",
             "label": "Introduction to Physical AI",
-            "href": "/ai-book/introduction/chapter1",
+            "href": "/physical-ai-textbook/introduction/chapter1",
             "docId": "introduction/chapter1",
             "unlisted": false
           }
@@ -31,63 +31,63 @@
           {
             "type": "link",
             "label": "ROS 2 Nervous System",
-            "href": "/ai-book/modules/01-ros-2",
+            "href": "/physical-ai-textbook/modules/01-ros-2",
             "docId": "modules/01-ros-2",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Digital Twin Simulation",
-            "href": "/ai-book/modules/02-digital-twin",
+            "href": "/physical-ai-textbook/modules/02-digital-twin",
             "docId": "modules/02-digital-twin",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "NVIDIA Isaac",
-            "href": "/ai-book/modules/03-nvidia-isaac",
+            "href": "/physical-ai-textbook/modules/03-nvidia-isaac",
             "docId": "modules/03-nvidia-isaac",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Vision-Language-Action",
-            "href": "/ai-book/modules/04-vla-systems",
+            "href": "/physical-ai-textbook/modules/04-vla-systems",
             "docId": "modules/04-vla-systems",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Bipedal Locomotion",
-            "href": "/ai-book/modules/05-bipedal-locomotion",
+            "href": "/physical-ai-textbook/modules/05-bipedal-locomotion",
             "docId": "modules/05-bipedal-locomotion",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Human-Robot Interaction",
-            "href": "/ai-book/modules/06-human-robot-interaction",
+            "href": "/physical-ai-textbook/modules/06-human-robot-interaction",
             "docId": "modules/06-human-robot-interaction",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Ethics & Society",
-            "href": "/ai-book/modules/07-ethics-and-society",
+            "href": "/physical-ai-textbook/modules/07-ethics-and-society",
             "docId": "modules/07-ethics-and-society",
             "unlisted": false
           },
           {
             "type": "link",
             "label": "Future Trends",
-            "href": "/ai-book/modules/08-future-trends",
+            "href": "/physical-ai-textbook/modules/08-future-trends",
             "docId": "modules/08-future-trends",
             "unlisted": false
           }
         ],
         "collapsed": true,
         "collapsible": true,
-        "href": "/ai-book/modules"
+        "href": "/physical-ai-textbook/modules"
       },
       {
         "type": "category",
@@ -96,7 +96,7 @@
           {
             "type": "link",
             "label": "Weeks 1-13",
-            "href": "/ai-book/weekly-map/weeks-1-13",
+            "href": "/physical-ai-textbook/weekly-map/weeks-1-13",
             "docId": "weekly-map/weeks-1-13",
             "unlisted": false
           }
@@ -111,7 +111,7 @@
           {
             "type": "link",
             "label": "Hardware Setup",
-            "href": "/ai-book/hardware/setup",
+            "href": "/physical-ai-textbook/hardware/setup",
             "docId": "hardware/setup",
             "unlisted": false
           }
@@ -126,7 +126,7 @@
           {
             "type": "link",
             "label": "Overview",
-            "href": "/ai-book/capstone/overview",
+            "href": "/physical-ai-textbook/capstone/overview",
             "docId": "capstone/overview",
             "unlisted": false
           }
@@ -137,14 +137,14 @@
       {
         "type": "link",
         "label": "Glossary",
-        "href": "/ai-book/glossary",
+        "href": "/physical-ai-textbook/glossary",
         "docId": "glossary",
         "unlisted": false
       },
       {
         "type": "link",
         "label": "References",
-        "href": "/ai-book/references",
+        "href": "/physical-ai-textbook/references",
         "docId": "references",
         "unlisted": false
       }

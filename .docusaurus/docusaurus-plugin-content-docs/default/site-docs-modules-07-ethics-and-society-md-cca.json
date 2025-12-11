@@ -5,7 +5,7 @@
   "source": "@site/docs/modules/07-ethics-and-society.md",
   "sourceDirName": "modules",
   "slug": "/modules/07-ethics-and-society",
-  "permalink": "/ai-book/modules/07-ethics-and-society",
+  "permalink": "/physical-ai-textbook/modules/07-ethics-and-society",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/modules/07-ethics-and-society.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Human-Robot Interaction",
-    "permalink": "/ai-book/modules/06-human-robot-interaction"
+    "permalink": "/physical-ai-textbook/modules/06-human-robot-interaction"
   },
   "next": {
     "title": "Future Trends",
-    "permalink": "/ai-book/modules/08-future-trends"
+    "permalink": "/physical-ai-textbook/modules/08-future-trends"
   }
 }

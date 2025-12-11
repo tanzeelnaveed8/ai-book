@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget Test</title>
+    <link rel="stylesheet" href="chat-widget.css">
+</head>
+<body>
+    <h1>Book Assistant Test Page</h1>
+    <p>This is a test page for the chat widget.</p>
+
+    <!-- Chat widget container will be injected here -->
+    <div id="chat-widget-container"></div>
+
+    <script src="chat-widget.js"></script>
+    <script>
+        // Initialize the chat widget
+        ChatWidget.init({
+            apiUrl: 'http://localhost:8000',
+            position: 'bottom-right',
+            theme: 'auto',
+            title: 'Book Assistant',
+            welcomeMessage: 'Ask me anything about this book!'
+        });
+    </script>
+</body>
+</html>

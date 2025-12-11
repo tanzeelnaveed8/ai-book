@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fetch --all --prune)",
+      "Bash(git checkout -b 1-gemini-rag-chatbot)",
+      "Bash(mkdir -p specs/002-gemini-rag-chatbot/checklists)",
+      "Bash(.specify/scripts/powershell/setup-plan.ps1 -Json)",
+      "Bash(git rev-parse:*)",
+      "Bash(pip install -r backend/requirements.txt)",
+      "Bash(pip install fastapi==0.104.1 uvicorn==0.24.0 cohere==4.9.0 google-generativeai==0.3.1 pydantic==2.5.0 python-dotenv==1.0.0 pytest==7.4.3 httpx==0.25.2)",
+      "Bash(pip install \"pydantic>=2.5.0\" --no-binary pydantic-core)",
+      "Bash(pip install fastapi uvicorn python-dotenv httpx)",
+      "Bash(pip install cohere google-generativeai)",
+      "Bash(pip install --user cohere google-generativeai)",
+      "Bash(python -m src.main)"
+    ]
+  }
+}

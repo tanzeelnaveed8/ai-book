@@ -5,7 +5,7 @@
   "source": "@site/docs/hardware/setup.md",
   "sourceDirName": "hardware",
   "slug": "/hardware/setup",
-  "permalink": "/ai-book/hardware/setup",
+  "permalink": "/physical-ai-textbook/hardware/setup",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/your-github-username/ai-book/tree/main/docs/hardware/setup.md",
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Weeks 1-13",
-    "permalink": "/ai-book/weekly-map/weeks-1-13"
+    "permalink": "/physical-ai-textbook/weekly-map/weeks-1-13"
   },
   "next": {
     "title": "Overview",
-    "permalink": "/ai-book/capstone/overview"
+    "permalink": "/physical-ai-textbook/capstone/overview"
   }
 }

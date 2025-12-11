@@ -1,145 +1,102 @@
 {
-  "/ai-book/-5fa": {
-    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
+  "/physical-ai-textbook/-980": {
+    "__comp": "1df93b7f",
     "__context": {
-      "plugin": "plugin---ai-book-ab-0-676"
+      "plugin": "8e76e802"
     },
-    "config": "config---ai-book-5-e-9-11a"
+    "config": "5e9f5e1a"
   },
-  "/ai-book/__docusaurus/debug-f49": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
+  "/physical-ai-textbook/-973": {
+    "__comp": "5e95c892",
     "__context": {
-      "plugin": "plugin---ai-book-docusaurus-debug-47-a-865"
+      "plugin": "f67a2727"
     }
   },
-  "/ai-book/__docusaurus/debug/config-bad": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---ai-book-docusaurus-debug-47-a-865"
-    }
+  "/physical-ai-textbook/-471": {
+    "__comp": "a7bd4aaa",
+    "version": "935f2afb"
   },
-  "/ai-book/__docusaurus/debug/content-476": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---ai-book-docusaurus-debug-47-a-865"
-    },
-    "allContent": "allContent---ai-book-docusaurus-debug-content-246-09a"
+  "/physical-ai-textbook/-29c": {
+    "__comp": "a94703ab"
   },
-  "/ai-book/__docusaurus/debug/globalData-ddb": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---ai-book-docusaurus-debug-47-a-865"
-    }
+  "/physical-ai-textbook/advanced-locomotion/advanced-bipedal-locomotion-bb2": {
+    "__comp": "17896441",
+    "content": "033302ea"
   },
-  "/ai-book/__docusaurus/debug/metadata-7d4": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---ai-book-docusaurus-debug-47-a-865"
-    }
+  "/physical-ai-textbook/capstone/overview-4e7": {
+    "__comp": "17896441",
+    "content": "4106a696"
   },
-  "/ai-book/__docusaurus/debug/registry-594": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---ai-book-docusaurus-debug-47-a-865"
-    }
+  "/physical-ai-textbook/ethical-implications/ethical-social-implications-f31": {
+    "__comp": "17896441",
+    "content": "67f37dd0"
   },
-  "/ai-book/__docusaurus/debug/routes-49c": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---ai-book-docusaurus-debug-47-a-865"
-    }
+  "/physical-ai-textbook/future-trends/future-trends-physical-ai-bb1": {
+    "__comp": "17896441",
+    "content": "fb93ee8e"
   },
-  "/ai-book/-f87": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
-    "__context": {
-      "plugin": "plugin---ai-book-491-d7c"
-    }
+  "/physical-ai-textbook/glossary-36e": {
+    "__comp": "17896441",
+    "content": "e747ec83"
   },
-  "/ai-book/-8e0": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "version": "version---ai-book-935-cac"
+  "/physical-ai-textbook/hardware/setup-290": {
+    "__comp": "17896441",
+    "content": "55f26b56"
   },
-  "/ai-book/-91d": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
+  "/physical-ai-textbook/human-robot-collaboration/-a38": {
+    "__comp": "17896441",
+    "content": "b123a6e5"
   },
-  "/ai-book/advanced-locomotion/advanced-bipedal-locomotion-585": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-advanced-locomotion-advanced-bipedal-locomotion-033-f47"
+  "/physical-ai-textbook/introduction/chapter1-9b5": {
+    "__comp": "17896441",
+    "content": "67cbc36d"
   },
-  "/ai-book/capstone/overview-c0a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-capstone-overview-410-3db"
+  "/physical-ai-textbook/module1/chapter2-765": {
+    "__comp": "17896441",
+    "content": "e8ee774b"
   },
-  "/ai-book/ethical-implications/ethical-social-implications-6af": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-ethical-implications-ethical-social-implications-67-f-9a8"
+  "/physical-ai-textbook/modules-d0d": {
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "e6f10eac"
   },
-  "/ai-book/future-trends/future-trends-physical-ai-d70": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-future-trends-future-trends-physical-aifb-9-97d"
+  "/physical-ai-textbook/modules/01-ros-2-a17": {
+    "__comp": "17896441",
+    "content": "a2485b04"
   },
-  "/ai-book/glossary-f2e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-glossarye-74-706"
+  "/physical-ai-textbook/modules/02-digital-twin-04e": {
+    "__comp": "17896441",
+    "content": "e23fc49a"
   },
-  "/ai-book/hardware/setup-772": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-hardware-setup-55-f-f5c"
+  "/physical-ai-textbook/modules/03-nvidia-isaac-8fe": {
+    "__comp": "17896441",
+    "content": "68f83c3a"
   },
-  "/ai-book/human-robot-collaboration/-dbc": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-human-robot-collaboration-b-12-3f6"
+  "/physical-ai-textbook/modules/04-vla-systems-b55": {
+    "__comp": "17896441",
+    "content": "65a0512c"
   },
-  "/ai-book/introduction/chapter1-713": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-introduction-chapter-167-c-99c"
+  "/physical-ai-textbook/modules/05-bipedal-locomotion-5fe": {
+    "__comp": "17896441",
+    "content": "e9e773d9"
   },
-  "/ai-book/module1/chapter2-3be": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-module-1-chapter-2-e-8-e-a65"
+  "/physical-ai-textbook/modules/06-human-robot-interaction-ab0": {
+    "__comp": "17896441",
+    "content": "4149cad0"
   },
-  "/ai-book/modules-207": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---ai-book-modules-960-6c6"
+  "/physical-ai-textbook/modules/07-ethics-and-society-324": {
+    "__comp": "17896441",
+    "content": "cca543c0"
   },
-  "/ai-book/modules/01-ros-2-2c2": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-modules-01-ros-2-a-24-b1b"
+  "/physical-ai-textbook/modules/08-future-trends-641": {
+    "__comp": "17896441",
+    "content": "85eb7bbb"
   },
-  "/ai-book/modules/02-digital-twin-5ca": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-modules-02-digital-twine-23-857"
+  "/physical-ai-textbook/references-f9a": {
+    "__comp": "17896441",
+    "content": "33a69f45"
   },
-  "/ai-book/modules/03-nvidia-isaac-4d6": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-modules-03-nvidia-isaac-68-f-224"
-  },
-  "/ai-book/modules/04-vla-systems-960": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-modules-04-vla-systems-65-a-9c6"
-  },
-  "/ai-book/modules/05-bipedal-locomotion-d3a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-modules-05-bipedal-locomotione-9-e-5bc"
-  },
-  "/ai-book/modules/06-human-robot-interaction-0db": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-modules-06-human-robot-interaction-414-358"
-  },
-  "/ai-book/modules/07-ethics-and-society-118": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-modules-07-ethics-and-societycca-292"
-  },
-  "/ai-book/modules/08-future-trends-685": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-modules-08-future-trends-85-e-15d"
-  },
-  "/ai-book/references-a37": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-references-33-a-a63"
-  },
-  "/ai-book/weekly-map/weeks-1-13-26c": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---ai-book-weekly-map-weeks-1-13-a-1-a-ad9"
+  "/physical-ai-textbook/weekly-map/weeks-1-13-209": {
+    "__comp": "17896441",
+    "content": "a1a028cb"
   }
 }
