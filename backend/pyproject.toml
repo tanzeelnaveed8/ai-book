@@ -1,32 +1,15 @@
-[tool.poetry]
-name = "rag-chatbot-backend"
-version = "0.0.1"
-description = "Backend for RAG chatbot system"
-authors = ["Developer <developer@example.com>"]
-
-[tool.poetry.dependencies]
-python = "^3.11"
-fastapi = "^0.104.1"
-uvicorn = "^0.24.0"
-cohere = "^4.9.0"
-qdrant-client = "^1.7.0"
-google-generativeai = "^0.3.1"
-pydantic = "^2.5.0"
-python-dotenv = "^1.0.0"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^7.4.3"
-black = "^23.10.1"
-isort = "^5.12.0"
-pylint = "^3.0.2"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.black]
-line-length = 88
-target-version = ['py311']
-
-[tool.isort]
-profile = "black"
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cohere>=5.20.0",
+    "fastapi>=0.124.2",
+    "openai>=2.11.0",
+    "openai-agents>=0.6.3",
+    "qdrant-client>=1.16.2",
+    "trafilatura>=2.0.0",
+    "uvicorn>=0.38.0",
+]

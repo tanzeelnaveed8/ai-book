@@ -33,30 +33,30 @@ class ChatWidget {
    * Create the widget HTML structure
    */
   createWidget() {
-    const container = document.getElementById('chat-widget-container');
+    let container = document.getElementById('chat-widget-container');
+
+    // Create container if it doesn't exist
+    if (!container) {
+      container = document.createElement('div');
+      container.id = 'chat-widget-container';
+      document.body.appendChild(container);
+    }
 
     // Create toggle button
     const toggleButton = document.createElement('button');
     toggleButton.id = 'chat-widget-toggle';
     toggleButton.innerHTML = '💬';
     toggleButton.setAttribute('aria-label', 'Open chat');
-    toggleButton.setAttribute('aria-expanded', 'false');
-    toggleButton.setAttribute('role', 'button');
 
     // Create chat window
     const chatWindow = document.createElement('div');
     chatWindow.className = 'chat-window';
-    chatWindow.setAttribute('aria-label', this.title);
-    chatWindow.setAttribute('role', 'dialog');
-    chatWindow.setAttribute('aria-modal', 'true');
-    chatWindow.setAttribute('aria-hidden', 'true');
-
     chatWindow.innerHTML = `
       <div class="chat-header">
         <h3>${this.title}</h3>
-        <button class="chat-close" aria-label="Close chat" aria-controls="chat-window" role="button">×</button>
+        <button class="chat-close" aria-label="Close chat">×</button>
       </div>
-      <div class="chat-messages" aria-live="polite" aria-atomic="true">
+      <div class="chat-messages">
         <div class="welcome-message">${this.welcomeMessage}</div>
       </div>
       <div class="chat-input-area">
@@ -64,11 +64,8 @@ class ChatWidget {
           class="chat-input"
           placeholder="Type your question..."
           rows="1"
-          aria-label="Type your message"
-          role="textbox"
-          aria-multiline="true"
         ></textarea>
-        <button class="chat-send-button" aria-label="Send message" role="button">➤</button>
+        <button class="chat-send-button" aria-label="Send message">➤</button>
       </div>
     `;
 
@@ -94,9 +91,7 @@ class ChatWidget {
   setPosition(chatWindow) {
     const positions = {
       'bottom-right': { bottom: '20px', right: '20px' },
-      'bottom-left': { bottom: '20px', left: '20px' },
-      'top-right': { top: '20px', right: '20px' },
-      'top-left': { top: '20px', left: '20px' }
+      'bottom-left': { bottom: '20px', left: '20px' }
     };
 
     const pos = positions[this.position] || positions['bottom-right'];
@@ -162,12 +157,7 @@ class ChatWidget {
     this.chatWindow.classList.add('open');
     this.isOpen = true;
     this.toggleButton.style.display = 'none';
-    this.toggleButton.setAttribute('aria-expanded', 'true');
-    this.chatWindow.setAttribute('aria-hidden', 'false');
     this.chatInput.focus();
-
-    // Add keyboard event listener for Escape key to close the chat
-    document.addEventListener('keydown', this.handleKeyDown.bind(this));
   }
 
   /**
@@ -177,21 +167,6 @@ class ChatWidget {
     this.chatWindow.classList.remove('open');
     this.isOpen = false;
     this.toggleButton.style.display = 'flex';
-    this.toggleButton.setAttribute('aria-expanded', 'false');
-    this.chatWindow.setAttribute('aria-hidden', 'true');
-
-    // Remove keyboard event listener
-    document.removeEventListener('keydown', this.handleKeyDown.bind(this));
-  }
-
-  /**
-   * Handle keyboard events for accessibility
-   */
-  handleKeyDown(event) {
-    if (event.key === 'Escape' && this.isOpen) {
-      this.closeChat();
-      this.toggleButton.focus();
-    }
   }
 
   /**
@@ -322,3 +297,53 @@ class ChatWidget {
 
 // Create a global instance
 window.ChatWidget = new ChatWidget();
+
+// Initialize the widget when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize the chat widget with configuration
+  // Check if we're in a development environment or production
+  const isDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  // For production, we'll use a relative path that should work with the backend deployment
+  // The backend API should be accessible at the same domain as the frontend or properly configured with CORS
+ const apiUrl = isDev ? 'http://localhost:8000' : window.CHAT_API_URL || '';
+
+  window.ChatWidget.init({
+    apiUrl: apiUrl,
+    position: 'bottom-right',
+    theme: 'auto',
+    title: 'Book Assistant',
+    welcomeMessage: 'Ask me anything about this book!'
+  });
+});
+
+// Also try to initialize after a short delay in case DOM is ready before script loads
+if (document.readyState === 'loading') {
+  // Still loading, DOMContentLoaded will handle it
+} else {
+  // DOM is already ready, initialize now
+  setTimeout(() => {
+    if (!document.getElementById('chat-widget-container')) {
+      // Check if we're in a development environment or production
+      const isDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      // For production, we'll use a relative path that should work with the backend deployment
+      // The backend API should be accessible at the same domain as the frontend or properly configured with CORS
+      const apiUrl = isDev ? 'http://localhost:8000/api/v1' : window.CHAT_API_URL || '/api/v1';
+
+      window.ChatWidget.init({
+        apiUrl: apiUrl,
+        position: 'bottom-right',
+        theme: 'auto',
+        title: 'Book Assistant',
+        welcomeMessage: 'Ask me anything about this book!'
+      });
+    }
+  }, 100); // Small delay to ensure everything is loaded
+}
+
+// Add a global function to allow runtime configuration of the API URL
+window.setChatApiUrl = function(url) {
+  if (window.ChatWidget) {
+    window.ChatWidget.apiUrl = url;
+  }
+  window.CHAT_API_URL = url;
+};

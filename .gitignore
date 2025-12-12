@@ -12,7 +12,8 @@ coverage/
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
-
+# Ignore Windows reserved files
+nul
 # Python
 __pycache__/
 *.py[cod]

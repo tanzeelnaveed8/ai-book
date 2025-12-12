@@ -10,9 +10,8 @@ export default {
   "url": "https://tanzeelnaveed8.github.io",
   "baseUrl": "/physical-ai-textbook/",
   "organizationName": "tanzeelnaveed8",
-  "projectName": "/physical-ai-textbook/",
+  "projectName": "physical-ai-textbook",
   "onBrokenLinks": "throw",
-  "onBrokenMarkdownLinks": "warn",
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -26,16 +25,28 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "./sidebars.js",
+          "sidebarPath": "C:\\tanzeel-work\\hackathon\\ai-book\\sidebars.js",
           "routeBasePath": "/",
-          "editUrl": "https://github.com/your-github-username/ai-book/tree/main/"
+          "editUrl": "https://github.com/tanzeelnaveed8/ai-book/tree/main/"
         },
         "blog": false,
         "theme": {
-          "customCss": "./src/css/custom.css"
+          "customCss": "C:\\tanzeel-work\\hackathon\\ai-book\\src\\css\\custom.css"
         }
       }
     ]
+  ],
+  "stylesheets": [
+    {
+      "href": "/physical-ai-textbook/chat-widget.css",
+      "type": "text/css"
+    }
+  ],
+  "scripts": [
+    {
+      "src": "/physical-ai-textbook/chat-widget.js",
+      "async": true
+    }
   ],
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
@@ -127,7 +138,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2025 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2025 My Project, Inc."
     },
     "prism": {
       "theme": {
@@ -351,6 +362,11 @@ export default {
         "autoCollapseCategories": false
       }
     },
+    "blog": {
+      "sidebar": {
+        "groupByYear": true
+      }
+    },
     "metadata": [],
     "tableOfContents": {
       "minHeadingLevel": 2,
@@ -358,6 +374,27 @@ export default {
     }
   },
   "baseUrlIssueBanner": true,
+  "future": {
+    "v4": {
+      "removeLegacyPostBuildHeadAttribute": false,
+      "useCssCascadeLayers": false
+    },
+    "experimental_faster": {
+      "swcJsLoader": false,
+      "swcJsMinimizer": false,
+      "swcHtmlMinimizer": false,
+      "lightningCssMinimizer": false,
+      "mdxCrossCompilerCache": false,
+      "rspackBundler": false,
+      "rspackPersistentCache": false,
+      "ssgWorkerThreads": false
+    },
+    "experimental_storage": {
+      "type": "localStorage",
+      "namespace": false
+    },
+    "experimental_router": "browser"
+  },
   "onBrokenAnchors": "warn",
   "onDuplicateRoutes": "warn",
   "staticDirectories": [
@@ -366,19 +403,25 @@ export default {
   "customFields": {},
   "plugins": [],
   "themes": [],
-  "scripts": [],
   "headTags": [],
-  "stylesheets": [],
   "clientModules": [],
   "titleDelimiter": "|",
   "noIndex": false,
   "markdown": {
     "format": "mdx",
     "mermaid": false,
+    "emoji": true,
     "mdx1Compat": {
       "comments": true,
       "admonitions": true,
       "headingIds": true
+    },
+    "anchors": {
+      "maintainCase": false
+    },
+    "hooks": {
+      "onBrokenMarkdownLinks": "warn",
+      "onBrokenMarkdownImages": "throw"
     }
   }
 };

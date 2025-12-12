@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Book Chatbot - Admin Interface</title>
+    <style>
+        :root {
+            --admin-primary: #4f46e5;
+            --admin-bg: #f8fafc;
+            --admin-card-bg: white;
+            --admin-text: #374151;
+            --admin-border: #e5e7eb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--admin-bg);
+            color: var(--admin-text);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--admin-border);
+        }
+
+        h1 {
+            color: var(--admin-primary);
+            margin: 0;
+        }
+
+        .card {
+            background: var(--admin-card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--admin-border);
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            background: var(--admin-primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background: #4338ca;
+        }
+
+        .btn-secondary {
+            background: #6b7280;
+        }
+
+        .btn-secondary:hover {
+            background: #56596d;
+        }
+
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        .status.success {
+            background: #d1fae5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+        }
+
+        .status.error {
+            background: #fee2e2;
+            color: #b91c1c;
+            border: 1px solid #fca5a5;
+        }
+
+        .documents-list {
+            margin-top: 20px;
+        }
+
+        .document-item {
+            padding: 10px;
+            border: 1px solid var(--admin-border);
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .document-item h3 {
+            margin: 0 0 10px 0;
+            color: var(--admin-primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Book Chatbot - Admin Interface</h1>
+            <p>Manage documents and chatbot content</p>
+        </header>
+
+        <div class="card">
+            <h2>Upload Document</h2>
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label for="documentId">Document ID</label>
+                    <input type="text" id="documentId" placeholder="Enter unique document ID" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="documentTitle">Document Title</label>
+                    <input type="text" id="documentTitle" placeholder="Enter document title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="documentContent">Document Content</label>
+                    <textarea id="documentContent" placeholder="Paste or type document content here" required></textarea>
+                </div>
+
+                <button type="submit">Upload and Index Document</button>
+            </form>
+
+            <div id="uploadStatus" class="status" style="display: none;"></div>
+        </div>
+
+        <div class="card">
+            <h2>Existing Documents</h2>
+            <div id="documentsList" class="documents-list">
+                <p>Loading documents...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const uploadForm = document.getElementById('uploadForm');
+            const uploadStatus = document.getElementById('uploadStatus');
+            const documentsList = document.getElementById('documentsList');
+
+            // Set default document ID to current date
+            document.getElementById('documentId').value = 'doc_' + new Date().toISOString().split('T')[0] + '_' + Date.now();
+
+            uploadForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+
+                const documentId = document.getElementById('documentId').value;
+                const documentTitle = document.getElementById('documentTitle').value;
+                const documentContent = document.getElementById('documentContent').value;
+
+                try {
+                    // First, embed the content
+                    const embedResponse = await fetch('/api/v1/embed', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            text: documentContent,
+                            input_type: 'search_document'
+                        })
+                    });
+
+                    if (!embedResponse.ok) {
+                        throw new Error('Embedding failed');
+                    }
+
+                    const embedResult = await embedResponse.json();
+
+                    // Then upsert the content
+                    const upsertResponse = await fetch('/api/v1/upsert', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            document_id: documentId,
+                            chunks: [{
+                                id: documentId + '_chunk_0',
+                                content: documentContent,
+                                metadata: {
+                                    title: documentTitle,
+                                    created_at: new Date().toISOString()
+                                }
+                            }]
+                        })
+                    });
+
+                    if (!upsertResponse.ok) {
+                        throw new Error('Upsert failed');
+                    }
+
+                    const upsertResult = await upsertResponse.json();
+
+                    uploadStatus.className = 'status success';
+                    uploadStatus.textContent = 'Document uploaded and indexed successfully!';
+                    uploadStatus.style.display = 'block';
+
+                    // Clear the form
+                    document.getElementById('documentTitle').value = '';
+                    document.getElementById('documentContent').value = '';
+                    document.getElementById('documentId').value = 'doc_' + new Date().toISOString().split('T')[0] + '_' + Date.now();
+
+                    // Refresh the documents list
+                    loadDocuments();
+
+                } catch (error) {
+                    uploadStatus.className = 'status error';
+                    uploadStatus.textContent = 'Error: ' + error.message;
+                    uploadStatus.style.display = 'block';
+                }
+            });
+
+            // Load existing documents
+            async function loadDocuments() {
+                try {
+                    const searchResponse = await fetch('/api/v1/search', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            query: 'test',
+                            top_k: 10
+                        })
+                    });
+
+                    if (searchResponse.ok) {
+                        const searchResult = await searchResponse.json();
+                        displayDocuments(searchResult.results);
+                    } else {
+                        documentsList.innerHTML = '<p>Unable to load documents: ' + searchResponse.statusText + '</p>';
+                    }
+                } catch (error) {
+                    documentsList.innerHTML = '<p>Error loading documents: ' + error.message + '</p>';
+                }
+            }
+
+            function displayDocuments(documents) {
+                if (documents && documents.length > 0) {
+                    let html = '';
+                    documents.forEach(doc => {
+                        html += `
+                            <div class="document-item">
+                                <h3>${doc.metadata?.title || 'Untitled Document'}</h3>
+                                <p><strong>ID:</strong> ${doc.id}</p>
+                                <p><strong>Content Preview:</strong> ${doc.content.substring(0, 100)}${doc.content.length > 100 ? '...' : ''}</p>
+                                <small>Score: ${doc.score.toFixed(3)}</small>
+                            </div>
+                        `;
+                    });
+                    documentsList.innerHTML = html;
+                } else {
+                    documentsList.innerHTML = '<p>No documents found.</p>';
+                }
+            }
+
+            // Initial load
+            loadDocuments();
+        });
+    </script>
+</body>
+</html>

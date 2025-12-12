@@ -1,27 +1,4 @@
 /* Floating chat widget styling - minimal, clean, dark-mode friendly */
-:root {
-  --chat-widget-primary: #4f46e5;
-  --chat-widget-primary-hover: #4338ca;
-  --chat-widget-bg: white;
-  --chat-widget-text: #374151;
-  --chat-widget-user-msg: #4f46e5;
-  --chat-widget-user-text: white;
-  --chat-widget-ai-msg: #e5e7eb;
-  --chat-widget-ai-text: #374151;
-  --chat-widget-border: #d1d5db;
-  --chat-widget-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* Dark mode variables */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --chat-widget-bg: #1f2937;
-    --chat-widget-text: white;
-    --chat-widget-ai-msg: #374151;
-    --chat-widget-ai-text: white;
-    --chat-widget-border: #374151;
-  }
-}
 
 /* Main widget container */
 #chat-widget-container {
@@ -37,7 +14,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: var(--chat-widget-primary);
+  background: #4f46e5;
   color: white;
   border: none;
   cursor: pointer;
@@ -50,7 +27,6 @@
 }
 
 #chat-widget-toggle:hover {
-  background: var(--chat-widget-primary-hover);
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
@@ -59,10 +35,9 @@
 .chat-window {
   width: 380px;
   height: 500px;
-  background: var(--chat-widget-bg);
-  color: var(--chat-widget-text);
+  background: white;
   border-radius: 12px;
-  box-shadow: var(--chat-widget-shadow);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -76,9 +51,17 @@
   opacity: 1;
 }
 
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .chat-window {
+    background: #1f2937;
+    color: white;
+  }
+}
+
 /* Chat header */
 .chat-header {
-  background: var(--chat-widget-primary);
+  background: #4f46e5;
   color: white;
   padding: 16px;
   display: flex;
@@ -114,7 +97,14 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  background: color-mix(in srgb, var(--chat-widget-bg) 90%, var(--chat-widget-primary) 10%);
+  background: #f9fafb;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .chat-messages {
+    background: #111827;
+  }
 }
 
 /* Individual message */
@@ -129,50 +119,73 @@
 
 .message.user {
   align-self: flex-end;
-  background: var(--chat-widget-user-msg);
-  color: var(--chat-widget-user-text);
+  background: #4f46e5;
+  color: white;
   border-bottom-right-radius: 4px;
 }
 
 .message.ai {
   align-self: flex-start;
-  background: var(--chat-widget-ai-msg);
-  color: var(--chat-widget-ai-text);
+  background: #e5e7eb;
+  color: #374151;
   border-bottom-left-radius: 4px;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .message.ai {
+    background: #374151;
+    color: white;
+  }
 }
 
 /* Chat input area */
 .chat-input-area {
   display: flex;
   padding: 12px;
-  background: var(--chat-widget-bg);
-  border-top: 1px solid var(--chat-widget-border);
+  background: white;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .chat-input-area {
+    background: #1f2937;
+    border-top: 1px solid #374151;
+  }
 }
 
 .chat-input {
   flex: 1;
   padding: 10px 14px;
-  border: 1px solid var(--chat-widget-border);
+  border: 1px solid #d1d5db;
   border-radius: 20px;
   outline: none;
   font-size: 14px;
   resize: none;
   max-height: 100px;
   overflow-y: auto;
-  background: var(--chat-widget-bg);
-  color: var(--chat-widget-text);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .chat-input {
+    background: #374151;
+    color: white;
+    border-color: #4b5563;
+  }
 }
 
 .chat-input:focus {
-  border-color: var(--chat-widget-primary);
-  box-shadow: 0 0 0 2px color-mix(in srgb, var(--chat-widget-primary) 20%, transparent);
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
 }
 
 .chat-send-button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--chat-widget-primary);
+  background: #4f46e5;
   color: white;
   border: none;
   margin-left: 8px;
@@ -183,7 +196,7 @@
 }
 
 .chat-send-button:disabled {
-  background: color-mix(in srgb, var(--chat-widget-border) 60%, black 40%);
+  background: #9ca3af;
   cursor: not-allowed;
 }
 
@@ -191,8 +204,15 @@
 .welcome-message {
   text-align: center;
   padding: 20px;
-  color: color-mix(in srgb, var(--chat-widget-text) 60%, transparent 40%);
+  color: #6b7280;
   font-style: italic;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .welcome-message {
+    color: #9ca3af;
+  }
 }
 
 /* Responsive design */
