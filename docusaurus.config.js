@@ -7,10 +7,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://tanzeelnaveed8.github.io',
-  baseUrl: '/physical-ai-textbook/',
+  baseUrl: '/ai-book/',
 
   organizationName: 'tanzeelnaveed8',
-  projectName: 'physical-ai-textbook',
+  projectName: 'ai-book',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
