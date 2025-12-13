@@ -8,9 +8,9 @@ export default {
   "tagline": "An Academic Textbook on Embodied Intelligence",
   "favicon": "img/favicon.ico",
   "url": "https://tanzeelnaveed8.github.io",
-  "baseUrl": "/physical-ai-textbook/",
+  "baseUrl": "/ai-book/",
   "organizationName": "tanzeelnaveed8",
-  "projectName": "physical-ai-textbook",
+  "projectName": "ai-book",
   "onBrokenLinks": "throw",
   "i18n": {
     "defaultLocale": "en",
@@ -25,26 +25,26 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "C:\\tanzeel-work\\hackathon\\ai-book\\sidebars.js",
+          "sidebarPath": "C:\\Users\\DELL LATITUDE\\Desktop\\tanzeel\\ai-book\\sidebars.js",
           "routeBasePath": "/",
           "editUrl": "https://github.com/tanzeelnaveed8/ai-book/tree/main/"
         },
         "blog": false,
         "theme": {
-          "customCss": "C:\\tanzeel-work\\hackathon\\ai-book\\src\\css\\custom.css"
+          "customCss": "C:\\Users\\DELL LATITUDE\\Desktop\\tanzeel\\ai-book\\src\\css\\custom.css"
         }
       }
     ]
   ],
   "stylesheets": [
     {
-      "href": "/physical-ai-textbook/chat-widget.css",
+      "href": "/ai-book/chat-widget.css",
       "type": "text/css"
     }
   ],
   "scripts": [
     {
-      "src": "/physical-ai-textbook/chat-widget.js",
+      "src": "/ai-book/chat-widget.js",
       "async": true
     }
   ],

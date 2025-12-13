@@ -1,108 +1,108 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/physical-ai-textbook/",
+      "path": "/ai-book/",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/physical-ai-textbook/",
+          "path": "/ai-book/",
           "mainDocId": "introduction/chapter1",
           "docs": [
             {
               "id": "advanced-locomotion/advanced-bipedal-locomotion",
-              "path": "/physical-ai-textbook/advanced-locomotion/advanced-bipedal-locomotion"
+              "path": "/ai-book/advanced-locomotion/advanced-bipedal-locomotion"
             },
             {
               "id": "capstone/overview",
-              "path": "/physical-ai-textbook/capstone/overview",
+              "path": "/ai-book/capstone/overview",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "ethical-implications/ethical-social-implications",
-              "path": "/physical-ai-textbook/ethical-implications/ethical-social-implications"
+              "path": "/ai-book/ethical-implications/ethical-social-implications"
             },
             {
               "id": "future-trends/future-trends-physical-ai",
-              "path": "/physical-ai-textbook/future-trends/future-trends-physical-ai"
+              "path": "/ai-book/future-trends/future-trends-physical-ai"
             },
             {
               "id": "glossary",
-              "path": "/physical-ai-textbook/glossary",
+              "path": "/ai-book/glossary",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "hardware/setup",
-              "path": "/physical-ai-textbook/hardware/setup",
+              "path": "/ai-book/hardware/setup",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "human-robot-collaboration/human-robot-collaboration",
-              "path": "/physical-ai-textbook/human-robot-collaboration/"
+              "path": "/ai-book/human-robot-collaboration/"
             },
             {
               "id": "introduction/chapter1",
-              "path": "/physical-ai-textbook/introduction/chapter1",
+              "path": "/ai-book/introduction/chapter1",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "module1/chapter2",
-              "path": "/physical-ai-textbook/module1/chapter2"
+              "path": "/ai-book/module1/chapter2"
             },
             {
               "id": "modules/01-ros-2",
-              "path": "/physical-ai-textbook/modules/01-ros-2",
+              "path": "/ai-book/modules/01-ros-2",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "modules/02-digital-twin",
-              "path": "/physical-ai-textbook/modules/02-digital-twin",
+              "path": "/ai-book/modules/02-digital-twin",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "modules/03-nvidia-isaac",
-              "path": "/physical-ai-textbook/modules/03-nvidia-isaac",
+              "path": "/ai-book/modules/03-nvidia-isaac",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "modules/04-vla-systems",
-              "path": "/physical-ai-textbook/modules/04-vla-systems",
+              "path": "/ai-book/modules/04-vla-systems",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "modules/05-bipedal-locomotion",
-              "path": "/physical-ai-textbook/modules/05-bipedal-locomotion",
+              "path": "/ai-book/modules/05-bipedal-locomotion",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "modules/06-human-robot-interaction",
-              "path": "/physical-ai-textbook/modules/06-human-robot-interaction",
+              "path": "/ai-book/modules/06-human-robot-interaction",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "modules/07-ethics-and-society",
-              "path": "/physical-ai-textbook/modules/07-ethics-and-society",
+              "path": "/ai-book/modules/07-ethics-and-society",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "modules/08-future-trends",
-              "path": "/physical-ai-textbook/modules/08-future-trends",
+              "path": "/ai-book/modules/08-future-trends",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "references",
-              "path": "/physical-ai-textbook/references",
+              "path": "/ai-book/references",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "weekly-map/weeks-1-13",
-              "path": "/physical-ai-textbook/weekly-map/weeks-1-13",
+              "path": "/ai-book/weekly-map/weeks-1-13",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "/modules",
-              "path": "/physical-ai-textbook/modules",
+              "path": "/ai-book/modules",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -110,7 +110,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/physical-ai-textbook/introduction/chapter1",
+                "path": "/ai-book/introduction/chapter1",
                 "label": "introduction/chapter1"
               }
             }

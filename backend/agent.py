@@ -7,21 +7,18 @@ from agents import Agent, Runner, OpenAIChatCompletionsModel, AsyncOpenAI
 from agents import set_tracing_disabled, function_tool
 from agents import enable_verbose_stdout_logging
 
-import os
-from dotenv import load_dotenv
-
 import cohere
 from qdrant_client import QdrantClient
 
-# ------------------ SETUP ------------------
+# ------------------ VERBOSE + TRACING ------------------
 enable_verbose_stdout_logging()
-load_dotenv()
 set_tracing_disabled(disabled=True)
 
-# Gemini Provider
-gemini_api_key = os.getenv("GEMINI_API_KEY")
+# ------------------ GEMINI SETUP ------------------
+GEMINI_API_KEY = "AIzaSyAHc-EFTYRvijTXIHkTJWFA00sOPAs8PyY"
+
 provider = AsyncOpenAI(
-    api_key=gemini_api_key,
+    api_key=GEMINI_API_KEY,
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
@@ -30,11 +27,15 @@ model = OpenAIChatCompletionsModel(
     openai_client=provider
 )
 
-# Cohere + Qdrant setup
-cohere_client = cohere.Client(os.getenv("COHERE_API_KEY"))
+# ------------------ COHERE + QDRANT ------------------
+COHERE_API_KEY = "eHRqT5dM3YCfsbBGKyXl7nM6soGtb6nqNc0RIMLQ"
+QDRANT_URL = "https://767343a5-490d-47fd-887d-754ba6fefc7e.europe-west3-0.gcp.cloud.qdrant.io:6333"
+QDRANT_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.Ww1X-PCEJ1LhizuunrRK4FUxleQHI96-pFK9NUZOhK8"
+
+cohere_client = cohere.Client(COHERE_API_KEY)
 qdrant = QdrantClient(
-    url=os.getenv("QDRANT_URL"),
-    api_key=os.getenv("QDRANT_API_KEY"),
+    url=QDRANT_URL,
+    api_key=QDRANT_API_KEY
 )
 
 # ------------------ FastAPI Setup ------------------
@@ -49,7 +50,7 @@ app.add_middleware(
 )
 
 # ------------------ Embedding Function ------------------
-def get_embedding(text):
+def get_embedding(text: str):
     """Generate vector embeddings using Cohere"""
     response = cohere_client.embed(
         model="embed-english-v3.0",
@@ -58,18 +59,16 @@ def get_embedding(text):
     )
     return response.embeddings[0]
 
-
 # ------------------ RETRIEVE TOOL ------------------
 @function_tool
-def retrieve(query):
+def retrieve(query: str):
     embedding = get_embedding(query)
     result = qdrant.query_points(
-        collection_name="humanoid_ai_book",
+        collection_name="ai_book",
         query=embedding,
         limit=5
     )
     return [point.payload["text"] for point in result.points]
-
 
 # ------------------ AGENT SETUP ------------------
 agent = Agent(
@@ -86,28 +85,20 @@ To answer the user question:
     tools=[retrieve],
 )
 
-
 # ------------------ REQUEST MODEL ------------------
 class ChatRequest(BaseModel):
     message: str
 
-
 # ------------------ API ENDPOINT ------------------
 @app.post("/chat")
 async def chat(req: ChatRequest):
-    result = await Runner.run(
-        agent,
-        input=req.message
-    )
-
-    # Change key to `response` so frontend can read it
+    result = await Runner.run(agent, input=req.message)
     return {
         "response": result.final_output,
-        "session_id": req.message  # optional: ya apna session logic
+        "session_id": req.message
     }
 
-
-# ------------------ TEST (only if running directly) ------------------
+# ------------------ RUN UVCORN ------------------
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)

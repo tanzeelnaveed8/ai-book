@@ -5,7 +5,7 @@
   "source": "@site/docs/glossary.md",
   "sourceDirName": ".",
   "slug": "/glossary",
-  "permalink": "/physical-ai-textbook/glossary",
+  "permalink": "/ai-book/glossary",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/tanzeelnaveed8/ai-book/tree/main/docs/glossary.md",
@@ -19,10 +19,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Overview",
-    "permalink": "/physical-ai-textbook/capstone/overview"
+    "permalink": "/ai-book/capstone/overview"
   },
   "next": {
     "title": "References",
-    "permalink": "/physical-ai-textbook/references"
+    "permalink": "/ai-book/references"
   }
 }

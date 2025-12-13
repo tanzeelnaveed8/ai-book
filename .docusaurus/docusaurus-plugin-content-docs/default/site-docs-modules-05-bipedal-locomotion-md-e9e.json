@@ -5,7 +5,7 @@
   "source": "@site/docs/modules/05-bipedal-locomotion.md",
   "sourceDirName": "modules",
   "slug": "/modules/05-bipedal-locomotion",
-  "permalink": "/physical-ai-textbook/modules/05-bipedal-locomotion",
+  "permalink": "/ai-book/modules/05-bipedal-locomotion",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/tanzeelnaveed8/ai-book/tree/main/docs/modules/05-bipedal-locomotion.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Vision-Language-Action",
-    "permalink": "/physical-ai-textbook/modules/04-vla-systems"
+    "permalink": "/ai-book/modules/04-vla-systems"
   },
   "next": {
     "title": "Human-Robot Interaction",
-    "permalink": "/physical-ai-textbook/modules/06-human-robot-interaction"
+    "permalink": "/ai-book/modules/06-human-robot-interaction"
   }
 }

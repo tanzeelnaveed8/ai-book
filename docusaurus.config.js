@@ -40,14 +40,14 @@ const config = {
 
   stylesheets: [
     {
-      href: '/physical-ai-textbook/chat-widget.css',
+      href: '/ai-book/chat-widget.css',
       type: 'text/css',
     },
   ],
 
   scripts: [
     {
-      src: '/physical-ai-textbook/chat-widget.js',
+      src: '/ai-book/chat-widget.js',
       async: true,
     },
   ],

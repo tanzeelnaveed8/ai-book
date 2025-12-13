@@ -5,7 +5,7 @@
   "source": "@site/docs/modules/06-human-robot-interaction.md",
   "sourceDirName": "modules",
   "slug": "/modules/06-human-robot-interaction",
-  "permalink": "/physical-ai-textbook/modules/06-human-robot-interaction",
+  "permalink": "/ai-book/modules/06-human-robot-interaction",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/tanzeelnaveed8/ai-book/tree/main/docs/modules/06-human-robot-interaction.md",
@@ -20,10 +20,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Bipedal Locomotion",
-    "permalink": "/physical-ai-textbook/modules/05-bipedal-locomotion"
+    "permalink": "/ai-book/modules/05-bipedal-locomotion"
   },
   "next": {
     "title": "Ethics & Society",
-    "permalink": "/physical-ai-textbook/modules/07-ethics-and-society"
+    "permalink": "/ai-book/modules/07-ethics-and-society"
   }
 }

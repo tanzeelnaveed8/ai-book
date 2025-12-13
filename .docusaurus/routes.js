@@ -3,174 +3,174 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/physical-ai-textbook/__docusaurus/debug',
-    component: ComponentCreator('/physical-ai-textbook/__docusaurus/debug', '1b0'),
+    path: '/ai-book/__docusaurus/debug',
+    component: ComponentCreator('/ai-book/__docusaurus/debug', 'c7e'),
     exact: true
   },
   {
-    path: '/physical-ai-textbook/__docusaurus/debug/config',
-    component: ComponentCreator('/physical-ai-textbook/__docusaurus/debug/config', '4ef'),
+    path: '/ai-book/__docusaurus/debug/config',
+    component: ComponentCreator('/ai-book/__docusaurus/debug/config', 'ba6'),
     exact: true
   },
   {
-    path: '/physical-ai-textbook/__docusaurus/debug/content',
-    component: ComponentCreator('/physical-ai-textbook/__docusaurus/debug/content', '02c'),
+    path: '/ai-book/__docusaurus/debug/content',
+    component: ComponentCreator('/ai-book/__docusaurus/debug/content', '6fa'),
     exact: true
   },
   {
-    path: '/physical-ai-textbook/__docusaurus/debug/globalData',
-    component: ComponentCreator('/physical-ai-textbook/__docusaurus/debug/globalData', '58f'),
+    path: '/ai-book/__docusaurus/debug/globalData',
+    component: ComponentCreator('/ai-book/__docusaurus/debug/globalData', '2a2'),
     exact: true
   },
   {
-    path: '/physical-ai-textbook/__docusaurus/debug/metadata',
-    component: ComponentCreator('/physical-ai-textbook/__docusaurus/debug/metadata', '647'),
+    path: '/ai-book/__docusaurus/debug/metadata',
+    component: ComponentCreator('/ai-book/__docusaurus/debug/metadata', '8ba'),
     exact: true
   },
   {
-    path: '/physical-ai-textbook/__docusaurus/debug/registry',
-    component: ComponentCreator('/physical-ai-textbook/__docusaurus/debug/registry', '125'),
+    path: '/ai-book/__docusaurus/debug/registry',
+    component: ComponentCreator('/ai-book/__docusaurus/debug/registry', '099'),
     exact: true
   },
   {
-    path: '/physical-ai-textbook/__docusaurus/debug/routes',
-    component: ComponentCreator('/physical-ai-textbook/__docusaurus/debug/routes', 'aa1'),
+    path: '/ai-book/__docusaurus/debug/routes',
+    component: ComponentCreator('/ai-book/__docusaurus/debug/routes', 'd85'),
     exact: true
   },
   {
-    path: '/physical-ai-textbook/LayoutWrapper',
-    component: ComponentCreator('/physical-ai-textbook/LayoutWrapper', 'bac'),
+    path: '/ai-book/LayoutWrapper',
+    component: ComponentCreator('/ai-book/LayoutWrapper', '6a4'),
     exact: true
   },
   {
-    path: '/physical-ai-textbook/',
-    component: ComponentCreator('/physical-ai-textbook/', '94f'),
+    path: '/ai-book/',
+    component: ComponentCreator('/ai-book/', 'a94'),
     exact: true
   },
   {
-    path: '/physical-ai-textbook/',
-    component: ComponentCreator('/physical-ai-textbook/', '90b'),
+    path: '/ai-book/',
+    component: ComponentCreator('/ai-book/', '782'),
     routes: [
       {
-        path: '/physical-ai-textbook/',
-        component: ComponentCreator('/physical-ai-textbook/', 'e76'),
+        path: '/ai-book/',
+        component: ComponentCreator('/ai-book/', 'e1b'),
         routes: [
           {
-            path: '/physical-ai-textbook/',
-            component: ComponentCreator('/physical-ai-textbook/', 'dba'),
+            path: '/ai-book/',
+            component: ComponentCreator('/ai-book/', '4ed'),
             routes: [
               {
-                path: '/physical-ai-textbook/advanced-locomotion/advanced-bipedal-locomotion',
-                component: ComponentCreator('/physical-ai-textbook/advanced-locomotion/advanced-bipedal-locomotion', 'bb2'),
+                path: '/ai-book/advanced-locomotion/advanced-bipedal-locomotion',
+                component: ComponentCreator('/ai-book/advanced-locomotion/advanced-bipedal-locomotion', '585'),
                 exact: true
               },
               {
-                path: '/physical-ai-textbook/capstone/overview',
-                component: ComponentCreator('/physical-ai-textbook/capstone/overview', '4e7'),
+                path: '/ai-book/capstone/overview',
+                component: ComponentCreator('/ai-book/capstone/overview', 'c0a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/physical-ai-textbook/ethical-implications/ethical-social-implications',
-                component: ComponentCreator('/physical-ai-textbook/ethical-implications/ethical-social-implications', 'f31'),
+                path: '/ai-book/ethical-implications/ethical-social-implications',
+                component: ComponentCreator('/ai-book/ethical-implications/ethical-social-implications', '6af'),
                 exact: true
               },
               {
-                path: '/physical-ai-textbook/future-trends/future-trends-physical-ai',
-                component: ComponentCreator('/physical-ai-textbook/future-trends/future-trends-physical-ai', 'bb1'),
+                path: '/ai-book/future-trends/future-trends-physical-ai',
+                component: ComponentCreator('/ai-book/future-trends/future-trends-physical-ai', 'd70'),
                 exact: true
               },
               {
-                path: '/physical-ai-textbook/glossary',
-                component: ComponentCreator('/physical-ai-textbook/glossary', '36e'),
+                path: '/ai-book/glossary',
+                component: ComponentCreator('/ai-book/glossary', 'f2e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/physical-ai-textbook/hardware/setup',
-                component: ComponentCreator('/physical-ai-textbook/hardware/setup', '290'),
+                path: '/ai-book/hardware/setup',
+                component: ComponentCreator('/ai-book/hardware/setup', '772'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/physical-ai-textbook/human-robot-collaboration/',
-                component: ComponentCreator('/physical-ai-textbook/human-robot-collaboration/', 'a38'),
+                path: '/ai-book/human-robot-collaboration/',
+                component: ComponentCreator('/ai-book/human-robot-collaboration/', 'dbc'),
                 exact: true
               },
               {
-                path: '/physical-ai-textbook/introduction/chapter1',
-                component: ComponentCreator('/physical-ai-textbook/introduction/chapter1', '9b5'),
+                path: '/ai-book/introduction/chapter1',
+                component: ComponentCreator('/ai-book/introduction/chapter1', '713'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/physical-ai-textbook/module1/chapter2',
-                component: ComponentCreator('/physical-ai-textbook/module1/chapter2', '765'),
+                path: '/ai-book/module1/chapter2',
+                component: ComponentCreator('/ai-book/module1/chapter2', '3be'),
                 exact: true
               },
               {
-                path: '/physical-ai-textbook/modules',
-                component: ComponentCreator('/physical-ai-textbook/modules', '5c8'),
+                path: '/ai-book/modules',
+                component: ComponentCreator('/ai-book/modules', 'a71'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/physical-ai-textbook/modules/01-ros-2',
-                component: ComponentCreator('/physical-ai-textbook/modules/01-ros-2', 'a17'),
+                path: '/ai-book/modules/01-ros-2',
+                component: ComponentCreator('/ai-book/modules/01-ros-2', '2c2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/physical-ai-textbook/modules/02-digital-twin',
-                component: ComponentCreator('/physical-ai-textbook/modules/02-digital-twin', '04e'),
+                path: '/ai-book/modules/02-digital-twin',
+                component: ComponentCreator('/ai-book/modules/02-digital-twin', '5ca'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/physical-ai-textbook/modules/03-nvidia-isaac',
-                component: ComponentCreator('/physical-ai-textbook/modules/03-nvidia-isaac', '8fe'),
+                path: '/ai-book/modules/03-nvidia-isaac',
+                component: ComponentCreator('/ai-book/modules/03-nvidia-isaac', '4d6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/physical-ai-textbook/modules/04-vla-systems',
-                component: ComponentCreator('/physical-ai-textbook/modules/04-vla-systems', 'b55'),
+                path: '/ai-book/modules/04-vla-systems',
+                component: ComponentCreator('/ai-book/modules/04-vla-systems', '960'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/physical-ai-textbook/modules/05-bipedal-locomotion',
-                component: ComponentCreator('/physical-ai-textbook/modules/05-bipedal-locomotion', '5fe'),
+                path: '/ai-book/modules/05-bipedal-locomotion',
+                component: ComponentCreator('/ai-book/modules/05-bipedal-locomotion', 'd3a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/physical-ai-textbook/modules/06-human-robot-interaction',
-                component: ComponentCreator('/physical-ai-textbook/modules/06-human-robot-interaction', 'ab0'),
+                path: '/ai-book/modules/06-human-robot-interaction',
+                component: ComponentCreator('/ai-book/modules/06-human-robot-interaction', '0db'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/physical-ai-textbook/modules/07-ethics-and-society',
-                component: ComponentCreator('/physical-ai-textbook/modules/07-ethics-and-society', '324'),
+                path: '/ai-book/modules/07-ethics-and-society',
+                component: ComponentCreator('/ai-book/modules/07-ethics-and-society', '118'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/physical-ai-textbook/modules/08-future-trends',
-                component: ComponentCreator('/physical-ai-textbook/modules/08-future-trends', '641'),
+                path: '/ai-book/modules/08-future-trends',
+                component: ComponentCreator('/ai-book/modules/08-future-trends', '685'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/physical-ai-textbook/references',
-                component: ComponentCreator('/physical-ai-textbook/references', 'f9a'),
+                path: '/ai-book/references',
+                component: ComponentCreator('/ai-book/references', 'a37'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/physical-ai-textbook/weekly-map/weeks-1-13',
-                component: ComponentCreator('/physical-ai-textbook/weekly-map/weeks-1-13', '209'),
+                path: '/ai-book/weekly-map/weeks-1-13',
+                component: ComponentCreator('/ai-book/weekly-map/weeks-1-13', '26c'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
