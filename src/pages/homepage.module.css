@@ -1,3 +1,4 @@
+/* ---------------- Hero Banner ---------------- */
 .heroBanner {
   padding: 6rem 0;
   text-align: center;
@@ -57,6 +58,7 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+/* ---------------- Sections ---------------- */
 .missionSection, .outcomesSection, .curriculumSection {
     padding: 4rem 0;
 }
@@ -98,6 +100,7 @@
     background-color: var(--ifm-background-color-secondary);
 }
 
+/* ---------------- Grid ---------------- */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -125,4 +128,82 @@
 .gridItem h3 {
   margin: 0;
   font-size: 1.25rem;
+}
+
+/* ---------------- Mobile Responsiveness ---------------- */
+@media (max-width: 1024px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+  .heroSubtitle {
+    font-size: 1.3rem;
+    padding: 0 1rem;
+  }
+  .heroImg {
+    width: 250px;
+    max-width: 35%;
+    right: 1rem;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons .button {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  .heroSubtitle {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+  .heroImg {
+    width: 200px;
+    max-width: 40%;
+    right: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroBanner {
+    padding: 4rem 1rem;
+  }
+  .heroTitle {
+    font-size: 2rem;
+  }
+  .heroSubtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .heroImg {
+    position: static;
+    display: block;
+    margin: 2rem auto 0 auto;
+    transform: none;
+    width: 60%;
+    max-width: 60%;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+  .buttons .button {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+  .missionSection, .outcomesSection, .curriculumSection {
+    padding: 3rem 1rem;
+  }
+  .missionSection p, .outcomesSection ul, .curriculumSection h2 {
+    font-size: 1rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
