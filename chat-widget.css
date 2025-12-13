@@ -1,19 +1,19 @@
-/* ------------------ Floating Chat Widget - Professional ------------------ */
+/* ------------------ Floating Chat Widget - Professional & Mobile-Friendly ------------------ */
 
 /* Main container */
 #chat-widget-container {
   position: fixed;
-  bottom: 20px;
+  bottom: env(safe-area-inset-bottom, 20px);
   right: 20px;
   z-index: 9999;
   font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
 }
 
-/* Toggle button - fixed above everything */
+/* Toggle button */
 #chat-widget-toggle {
   position: fixed;
-  bottom: 20px;          /* fixed distance from bottom */
-  right: 20px;           /* fixed distance from right */
+  bottom: env(safe-area-inset-bottom, 20px);
+  right: 20px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -21,43 +21,40 @@
   color: white;
   border: none;
   cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 28px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  z-index: 10001; /* always above chat window */
   transition: all 0.3s ease;
-  z-index: 10001;         /* above chat window */
 }
 
 #chat-widget-toggle:hover {
   transform: scale(1.1);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.3);
 }
 
-/* Chat window - opens above toggle button */
+/* Chat window */
 .chat-window {
   position: fixed;
-  bottom: 90px;           /* leave space for toggle button */
+  bottom: calc(env(safe-area-inset-bottom, 20px) + 80px);
   right: 20px;
   width: 400px;
   max-width: 95vw;
   height: 550px;
   background: #ffffff;
   border-radius: 16px;
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
-  display: flex;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.2);
+  display: none; /* hidden by default */
   flex-direction: column;
   overflow: hidden;
-  transform: translateY(20px);
-  opacity: 0;
-  transition: all 0.35s ease;
   z-index: 10000;
+  transition: all 0.35s ease;
 }
 
 .chat-window.open {
-  transform: translateY(0);
-  opacity: 1;
+  display: flex;
 }
 
 /* Dark mode support */
@@ -238,17 +235,19 @@
   border-radius: 3px;
 }
 
-/* Responsive */
+/* -------------------- Mobile responsive -------------------- */
 @media (max-width: 480px) {
-  .chat-window {
-    width: calc(100vw - 32px);
-    height: calc(100vh - 80px);
-    bottom: 90px; /* above toggle */
-    right: 16px;
-  }
   #chat-widget-toggle {
     width: 50px;
     height: 50px;
     font-size: 22px;
+    bottom: env(safe-area-inset-bottom, 12px);
+    right: 16px;
+  }
+  .chat-window {
+    width: calc(100vw - 32px);
+    height: calc(100vh - 100px);
+    bottom: calc(env(safe-area-inset-bottom, 12px) + 70px);
+    right: 16px;
   }
 }
