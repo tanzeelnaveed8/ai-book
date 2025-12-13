@@ -305,7 +305,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const isDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
   // For production, we'll use a relative path that should work with the backend deployment
   // The backend API should be accessible at the same domain as the frontend or properly configured with CORS
-  const apiUrl = 'https://ai-book-vg46.onrender.com';
+  const apiUrl = "https://ai-book-vg46.onrender.com";
+  window.ChatWidget.init({ apiUrl });
 
   window.ChatWidget.init({
     apiUrl: apiUrl,
