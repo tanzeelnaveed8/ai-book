@@ -15,7 +15,7 @@ enable_verbose_stdout_logging()
 set_tracing_disabled(disabled=True)
 
 # ------------------ GEMINI SETUP ------------------
-GEMINI_API_KEY = "AIzaSyAHc-EFTYRvijTXIHkTJWFA00sOPAs8PyY"
+GEMINI_API_KEY = "AIzaSyDcXnPazGONqC1k2PVaJlp1qveRpqV3RKs"
 
 provider = AsyncOpenAI(
     api_key=GEMINI_API_KEY,
@@ -101,4 +101,4 @@ async def chat(req: ChatRequest):
 # ------------------ RUN UVCORN ------------------
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=7860)
