@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const isDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
   // For production, we'll use a relative path that should work with the backend deployment
   // The backend API should be accessible at the same domain as the frontend or properly configured with CORS
-  const apiUrl = "https://ai-book-vg46.onrender.com";
+  const apiUrl = "https://taneelnaveed8-backend.hf.space";
   window.ChatWidget.init({ apiUrl });
 
   window.ChatWidget.init({
@@ -328,7 +328,7 @@ if (document.readyState === 'loading') {
       const isDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
       // For production, we'll use a relative path that should work with the backend deployment
       // The backend API should be accessible at the same domain as the frontend or properly configured with CORS
-      const apiUrl = isDev ? 'http://localhost:8000/api/v1' : window.CHAT_API_URL || '/api/v1';
+      const apiUrl = isDev ? 'http://localhost:7860/api/v1' : window.CHAT_API_URL || '/api/v1';
 
       window.ChatWidget.init({
         apiUrl: apiUrl,
