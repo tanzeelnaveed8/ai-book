@@ -25,13 +25,13 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "C:\\tanzeel-work\\ai-book\\sidebars.js",
+          "sidebarPath": "C:\\Users\\DELL LATITUDE\\Desktop\\tanzeel\\ai-book\\sidebars.js",
           "routeBasePath": "/",
           "editUrl": "https://github.com/tanzeelnaveed8/ai-book/tree/main/"
         },
         "blog": false,
         "theme": {
-          "customCss": "C:\\tanzeel-work\\ai-book\\src\\css\\custom.css"
+          "customCss": "C:\\Users\\DELL LATITUDE\\Desktop\\tanzeel\\ai-book\\src\\css\\custom.css"
         }
       }
     ]

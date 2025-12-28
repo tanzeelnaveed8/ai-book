@@ -15,15 +15,15 @@ enable_verbose_stdout_logging()
 set_tracing_disabled(disabled=True)
 
 # ------------------ GEMINI SETUP ------------------
-GEMINI_API_KEY = "AIzaSyDcXnPazGONqC1k2PVaJlp1qveRpqV3RKs"
+API_KEY = "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"
 
 provider = AsyncOpenAI(
-    api_key=GEMINI_API_KEY,
-    base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+    api_key=API_KEY,
+    base_url="https://openrouter.ai/api/v1"
 )
 
 model = OpenAIChatCompletionsModel(
-    model="gemini-2.5-flash",
+    model="xiaomi/mimo-v2-flash:free",
     openai_client=provider
 )
 
